@@ -9,6 +9,19 @@ describe('My First Test: Connexion Amazon', () => {
       cy.get('#a-autoid-1-announce').click()
       //cy.wait(5000)
       cy.get('#nav-cart').click()
+      cy.get('#a-autoid-0-announce').click()
+      cy.get('#ap_email').type('houssemhajji414@gmail.com')
+      cy.get('.a-button-inner > #continue').click()
+      cy.get('#ap_password').type('azerTY')
+      cy.get('#signInSubmit').click()
+      //cy.get('#ap-account-fixup-phone-skip-link').click()
+      cy.get('#sc-buy-box-ptc-button > .a-button-inner > .a-button-input').click()
+    //  cy.get('#a-autoid-1-announce > .a-size-base-plus').click()
+     // cy.get('#ap_customer_name').type('Houssem Hajji')
+    //  cy.get('#ap_email').type('houssemhajji414@gmail.com')
+     // cy.get('#ap_password').type('1025azerTY?')
+     // cy.get('#ap_password_check').type('1025azerTY?')
+     // cy.get('#continue').click()
       //cy.get('#a-autoid-0-announce').click()
    //cy.get('#ap_email').type('houssemhajji4@gmail.com')
    //cy.get('.a-button-inner > #continue').click()
@@ -28,15 +41,5 @@ describe('My First Test: Connexion Amazon', () => {
       //cy.get('.a-button-inner > #continue').click()
      // cy.get('#a-autoid-1').click()
     })
-    /*it('creer un compte',()=> {
-      
-      cy.get('#ap_customer_name').type('houssem hajji')
-      cy.get('#ap_email').type('houssemhajji4@gmail.com')
-      cy.get('#ap_password').type('1025azerTY?')
-      cy.get('#ap_password_check').type('1025azerTY?')
-      cy.get('#continue').click()
-
-    })*/
   
   })
-//})
